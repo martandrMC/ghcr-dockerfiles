@@ -1,0 +1,11 @@
+FROM ubuntu:16.04
+
+# Fix the damn mirrors because Xenial is practically dead at this point
+RUN echo "deb mirror://mirrors.ubuntu.com/mirrors.txt xenial main restricted universe multiverse" > /etc/apt/sources.list
+RUN echo "deb mirror://mirrors.ubuntu.com/mirrors.txt xenial-updates main restricted universe multiverse" >> /etc/apt/sources.list
+RUN echo "deb mirror://mirrors.ubuntu.com/mirrors.txt xenial-security main restricted universe multiverse" >> /etc/apt/sources.list
+RUN echo "deb mirror://mirrors.ubuntu.com/mirrors.txt xenial-backports main restricted universe multiverse" >> /etc/apt/sources.list
+RUN apt-get update
+
+# Pull packages that we most probably need for building stuff
+RUN apt-get install -y build-essential ca-certificates
