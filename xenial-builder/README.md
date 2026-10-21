@@ -5,5 +5,4 @@ at least GLIBC version 2.23 and related requirements of that era.
 The end goal is binary portability.
 
 ## Changes from Base
-- Fixed the mirror list for APT since Xenial is EOL.
-- Provided `build-essenital` and `ca-certificates` packages.
+- Provided `ca-certificates`, `build-essenital`, `git`, wget` packages.
