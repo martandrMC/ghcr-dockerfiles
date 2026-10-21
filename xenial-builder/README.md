@@ -5,4 +5,4 @@ at least GLIBC version 2.23 and related requirements of that era.
 The end goal is binary portability.
 
 ## Changes from Base
-- Provided `ca-certificates`, `build-essenital`, `git`, wget` packages.
+- Provided `ca-certificates`, `build-essenital`, `git`, `wget` packages.
